@@ -1,0 +1,30 @@
+/* ==== base ==== */
+
+html {
+  touch-action: manipulation;
+}
+
+#answer_list {
+  display: flex;
+  flex-direction: row;
+}
+
+/* animation */
+.correct {
+  animation-name: correct;
+  animation-duration: 1s;
+}
+.incorrect {
+  animation-name: incorrect;
+  animation-duration: 1s;
+}
+@keyframes correct {
+  0% {
+    background-color: green;
+  }
+}
+@keyframes incorrect {
+  0% {
+    background-color: maroon;
+  }
+}
